@@ -1,0 +1,282 @@
+body { margin: 0; padding: 0; }
+
+/* Background */
+.top,
+.bottom {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    width: 800px;
+}
+
+.top {
+    top: 0px;
+    background-color: #E2E2E2;
+    height: 148px;
+}
+.bottom {
+    top: 148px;
+    background-color: #F0F0F0;
+    height: 490px;
+}
+
+/* Default Font */
+body {
+  font-family: sans-serif;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  background-color: #F0F0F0;
+  top: 11px;
+  left: 9px;
+  width: 781px;
+  height: 137px;
+  font-family: Arial;
+}
+
+.title {
+  position: absolute;
+  top: 36px;
+  left: 30px;
+  font-size: 34px;
+}
+
+.version {
+  position: absolute;
+  top: 74px;
+  left: 30px;
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  color: #727272;
+}
+
+/* Body */
+.tables {
+  background-color: white;
+  position: absolute;
+  left: 9px;
+  top: 148px;
+  height: 449px;
+  width: 781px;
+}
+
+.left, .right, .middle {
+  display:table-cell;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.middle {
+  width: 5px;
+  background-color: #F0F0F0;
+}
+.left, .right {
+  height: 449px;
+  width : 388px;
+}
+
+.left{
+
+}
+
+.right {
+
+}
+
+
+/* Input Side */
+.bodyTitle1 {
+  position: absolute;
+  top: 32px;
+  left: 29px;
+  font-size: 18px;
+  font-family: Georgia;
+}
+
+.label1 {
+  position: absolute;
+  top: 84px;
+  left: 30px;
+}
+
+.label2 {
+  position: absolute;
+  top: 172px;
+  left: 30px;
+}
+
+.label3 {
+  position: absolute;
+  top: 261px;
+  left: 30px;
+}
+
+.text1 {
+  font-size: 25px;
+  font-family: arial;
+  background-color: #ECECEC;
+
+  position: absolute;
+  top: 104px;
+  width: 317px;
+  height: 36px;
+  left: 30px;
+
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.text2 {
+  font-size: 25px;
+  font-family: arial;
+  background-color: #ECECEC;
+
+  position: absolute;
+  top: 193px;
+  width: 319px;
+  height: 38px;
+  left: 30px;
+
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.text3 {
+  font-size: 25px;
+  font-family: arial;
+  background-color: #ECECEC;
+
+  position: absolute;
+  top: 282px;
+  width: 319px;
+  height: 38px;
+  left: 30px;
+
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.button {
+  background-color: #434343;
+
+  color: white;
+  font-size: 18px;
+  font-family: georgia;
+
+  position: absolute;
+  top: 354px;
+  left: 30px;
+  width: 91px;
+  height: 45px;
+
+  border: 9px solid #434343;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+
+/* Output Side */
+.bodyTitle2 {
+  position: absolute;
+  top: 32px;
+  left: 410px;
+  font-size: 19px;
+  font-family: georgia;
+}
+
+.scroller {
+  position: absolute;
+
+  height: 287px;
+  width: 368px;
+
+  top: 86px;
+  left: 409px;
+
+  overflow: auto;
+}
+
+.output {
+  background-color: white;
+
+  position: absolute;
+
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  border: 4px solid #DEDEDE;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.wtask {
+  width: 341px;
+  height: 37px;
+}
+
+.btask {
+  width: 341px;
+  height: 39px;
+  border: 2px solid white;
+  background-color: #ECECEC;
+}
+
+.wtask .name {
+  position: relative;
+  top: 10px;
+  left: 18px;
+  font-family: georgia;
+  font-size: 15px;
+}
+
+.wtask .date {
+  position: relative;
+  top: 10px;
+  left: 17px;
+  font-size: 13px;
+  font-family: arial;
+  color: #727272;
+}
+
+.wtask .assigned {
+  position: relative;
+  font-family: arial;
+  font-size: 13px;
+  top: 12px;
+  right: 15px;
+  float: right;
+}
+
+.btask .name {
+  position: relative;
+  top: 11px;
+  left: 16px;
+  font-family: georgia;
+  font-size: 15px;
+}
+
+.btask .date {
+  position: relative;
+  top: 11px;
+  left: 17px;
+  font-size: 13px;
+  font-family: arial;
+  color: #727272;
+}
+
+.btask .assigned {
+  position: relative;
+  font-family: arial;
+  font-size: 13px;
+  top: 13px;
+  right: 17px;
+  float: right;
+}

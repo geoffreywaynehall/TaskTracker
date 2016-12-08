@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!-- Background -->
+<div class="top"></div>
+<div class="bottom"></div>
+
+  <head class="test">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <title>Task Tracker</title>
+      <div class="title"><b>Task Tracker</b></div>
+      <div class="version">v2.0</div>
+    </div>
+
+    <!-- Body -->
+    <div class="tables">
+
+      <div class="left">
+
+        <div class="bodyTitle1">Create a Task</div>
+        <br/>
+
+        <div class="label1"><b>Task Name</b></div>
+        <input type="text" class="text1" id="Name" name="Name">
+
+        <div class="label2"><b>Date</b></div>
+        <input type="date" class="text2" id="Date" name="Date">
+
+        <div class="label3"><b>Assigned To</b></div>
+        <input type="text" class="text3" id="Assigned" name="Assigned">
+        <br/>
+
+        <input class="button" name="submit" id="submit" value="Submit" type="submit">
+      </div>
+
+      <div class="middle"></div>
+
+      <div class="right">
+        <div class="bodyTitle2">Existing Tasks</div>
+        <br/>
+        <div class="scroller">
+          <div class="output" id="output"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="info.json"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
