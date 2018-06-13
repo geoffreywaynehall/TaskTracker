@@ -77,15 +77,6 @@ body {
   width : 388px;
 }
 
-.left{
-
-}
-
-.right {
-
-}
-
-
 /* Input Side */
 .bodyTitle1 {
   position: absolute;
@@ -128,6 +119,8 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  
+  padding-left: 2px;
 }
 .text2 {
   font-size: 25px;
@@ -160,6 +153,8 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  
+  padding-left: 2px;
 }
 
 .button {

@@ -50,24 +50,27 @@ document.getElementById("submit").addEventListener("click", function () {
 
 	// If HTML Datepicker is supported
 	var rawDate = /[0-9][0-9][0-9][0-9]\-[0-3][0-9]\-[0-1][0-9]/
-	if(rawDate.test(document.getElementById("Date").value)) {
+	if(document.getElementById("Name").value != '' && rawDate.test(document.getElementById("Date").value) && document.getElementById("Assigned").value != '') {
 		var origDate = document.getElementById("Date").value.split('-')
 
-		storage.push({"name" : document.getElementById("Name").value , "date" : (origDate[1] + '/' + origDate[2] + '/' + origDate[0]) , "assigned" : document.getElementById("Assigned").value});
-		update();
+		storage.unshift({"name" : document.getElementById("Name").value , "date" : (origDate[1] + '/' + origDate[2] + '/' + origDate[0]) , "assigned" : document.getElementById("Assigned").value});
 
 		document.getElementById("Name").value = '';
 		document.getElementById("Date").value = today;
 		document.getElementById("Assigned").value = '';
+		
+		update();
 	}
 
 	// If HTML Datepicker is not supported
 	var date = /[0-1][0-9]\/[0-3][0-9]\/[0-9][0-9][0-9][0-9]/;
 	if(document.getElementById("Name").value != '' && date.test(document.getElementById("Date").value) && document.getElementById("Assigned").value != '') {
-  	storage.push({"name" : document.getElementById("Name").value , "date" : document.getElementById("Date").value , "assigned" : document.getElementById("Assigned").value});
-  	update();
+		storage.unshift({"name" : document.getElementById("Name").value , "date" : document.getElementById("Date").value , "assigned" : document.getElementById("Assigned").value});
+		
 		document.getElementById("Name").value = '';
 		document.getElementById("Date").value = '';
 		document.getElementById("Assigned").value = '';
+		
+		update();
 	}
 });
