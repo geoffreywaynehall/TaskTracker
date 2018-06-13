@@ -49,7 +49,7 @@ update();
 document.getElementById("submit").addEventListener("click", function () {
 
 	// If HTML Datepicker is supported
-	var rawDate = /[0-9][0-9][0-9][0-9]\-[0-3][0-9]\-[0-1][0-9]/
+	var rawDate = /[0-9][0-9][0-9][0-9]\-[0-1][0-9]\-[0-3][0-9]/
 	if(document.getElementById("Name").value != '' && rawDate.test(document.getElementById("Date").value) && document.getElementById("Assigned").value != '') {
 		var origDate = document.getElementById("Date").value.split('-')
 
